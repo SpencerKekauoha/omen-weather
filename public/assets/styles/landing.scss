@@ -1,0 +1,17 @@
+// FONT IMPORTS
+
+@font-face {
+    font-family: 'icon';
+    src: url('weather_icons/webfontkit/artill_clean_icons-webfont.woff') format('woff2'),
+         url('weather_icons/webfontkit/artill_clean_icons-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$weather-icon: 'icon', sans-serif;
+
+
+.test {
+  font-family: icon;
+}
