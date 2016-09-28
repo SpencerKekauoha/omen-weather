@@ -10,11 +10,6 @@
   </head>
   <body>
     <main ng-controller="mainCtrl">
-      <input type="text" placeholder="City Name" ng-model="location.city">
-      <input type="text" placeholder="US State or Country" ng-model="location.state">
-      <button type="button" name="button" ng-click="getWeatherData(location)">Get Weather</button>
-      <img ng-src="{{data.current_observation.icon_url}}" alt="" />
-      {{data}}
       <ui-view></ui-view>
     </main>
     <!-- Angular -->

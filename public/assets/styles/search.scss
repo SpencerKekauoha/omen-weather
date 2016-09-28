@@ -1,0 +1,95 @@
+// COLOR SCHEME
+$teal: #7FDDD7;
+$blue: #126AC4;
+$purp: #523AB7;
+$red: #F16B65;
+$oj: #EA5D24;
+$yellow: #FBEC7D;
+
+// FONTS
+
+$weather-icon: 'icon', sans-serif;
+$biko: 'bikoregular', sans-serif;
+
+.search-section {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  .search-container {
+    height: 100%;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+    }
+    div {
+      #lightning {
+        height: 200px;
+        margin-bottom: 20px;
+        #l1 {
+          animation: fill 1.5s;
+          animation-direction: alternate;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+        }
+        @keyframes fill {
+          from { fill: $yellow; }
+          to { fill: #000; }
+        }
+        #l2 {
+          animation: fill 1.5s;
+          animation-delay: 1s;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+        }
+        @keyframes fill {
+          from { fill: $yellow; }
+          to { fill: #000; }
+        }
+      }
+      h1 {
+        margin-bottom: 20px;
+        font-family: $biko;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      input {
+        height: 50px;
+        width: 75%;
+        margin-bottom: 20px;
+        background: $yellow;
+        border: none;
+        font-family: $biko;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000;
+        border-radius: 10px;
+        // border: 1px white solid;
+      }
+      input:focus {
+        outline: 0;
+      }
+      input::-webkit-input-placeholder {
+        color: #000;
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      button {
+        height: 50px;
+        width: 150px;
+        font-family: $biko;
+        color: $teal;
+        background: #000;
+        border: 5px $teal solid;
+        border-radius: 10px;
+      }
+      button:focus {
+        outline:0;
+      }
+    }
+  }
+}
