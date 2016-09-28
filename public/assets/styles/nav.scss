@@ -10,3 +10,28 @@ $yellow: #FBEC7D;
 
 $weather-icon: 'icon', sans-serif;
 $biko: 'bikoregular', sans-serif;
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background: #000;
+  position: relative;
+  #hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+  }
+  h1 {
+    font-family: $biko;
+    color: #fff;
+    font-size: 45px;
+  }
+}
+.nav-mobile {
+  font-family: $biko;
+  display: none;
+}
