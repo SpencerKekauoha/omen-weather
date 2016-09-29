@@ -1,95 +1,125 @@
-// COLOR SCHEME
-$teal: #7FDDD7;
-$blue: #126AC4;
-$purp: #523AB7;
-$red: #F16B65;
-$oj: #EA5D24;
-$yellow: #FBEC7D;
-
-// FONTS
-
-$weather-icon: 'icon', sans-serif;
-$biko: 'bikoregular', sans-serif;
-
-.search-section {
-  height: 100vh;
-  width: 100vw;
+.search-bar-section {
+  display: flex;
+  flex-direction: column;
+  font-family: $biko;
   background: #000;
-  .search-container {
-    height: 100%;
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100%;
-    }
-    div {
-      #lightning {
-        height: 200px;
-        margin-bottom: 20px;
-        #l1 {
-          animation: fill 1.5s;
-          animation-direction: alternate;
-          -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-        }
-        @keyframes fill {
-          from { fill: $yellow; }
-          to { fill: #000; }
-        }
-        #l2 {
-          animation: fill 1.5s;
-          animation-delay: 1s;
-          -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-        }
-        @keyframes fill {
-          from { fill: $yellow; }
-          to { fill: #000; }
-        }
-      }
-      h1 {
-        margin-bottom: 20px;
-        font-family: $biko;
-        color: #fff;
-        text-transform: uppercase;
-      }
-      input {
-        height: 50px;
-        width: 75%;
-        margin-bottom: 20px;
-        background: $yellow;
-        border: none;
-        font-family: $biko;
-        font-size: 40px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #000;
-        border-radius: 10px;
-        // border: 1px white solid;
-      }
-      input:focus {
-        outline: 0;
-      }
-      input::-webkit-input-placeholder {
-        color: #000;
-        font-size: 16px;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      button {
-        height: 50px;
-        width: 150px;
-        font-family: $biko;
-        color: $teal;
-        background: #000;
-        border: 5px $teal solid;
-        border-radius: 10px;
-      }
-      button:focus {
-        outline:0;
-      }
-    }
+  border: none;
+  border-bottom: 1px solid #000;
+  display: none;
+  .search {
+    height: 85px;
+    background: #000;
+    font-size: 30px;
+    text-indent: 15px;
+    color: #fff;
+    border: none;
+  }
+  .search:focus {
+    outline: 0;
+  }
+  .search::-webkit-input-placeholder {
+    text-indent: 15px;
+    color: #fff;
+    font-size: 30px;
+    // text-align: left;
+    text-transform: uppercase;
+  }
+  .search-btn {
+    height: 53px;
+    width: 92px;
+    margin-left: 15px;
+    background: linear-gradient(242.18deg, #F0552B -7.3%, rgba(255, 255, 255, 0) 132.76%), linear-gradient(0deg, #EA0785, #EA0785);
+    mix-blend-mode: normal;
+    opacity: 100%;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+  }
+  .search-btn:focus {
+    outline: 0;
   }
 }
+
+// .search-section {
+//   height: 100vh;
+//   width: 100vw;
+//   background: #000;
+//   .search-container {
+//     height: 100%;
+//     div {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//       height: 100%;
+//     }
+//     div {
+//       #lightning {
+//         height: 200px;
+//         margin-bottom: 20px;
+//         #l1 {
+//           animation: fill 1.5s;
+//           animation-direction: alternate;
+//           -webkit-animation-iteration-count: infinite;
+//           animation-iteration-count: infinite;
+//         }
+//         @keyframes fill {
+//           from { fill: $yellow; }
+//           to { fill: #000; }
+//         }
+//         #l2 {
+//           animation: fill 1.5s;
+//           animation-delay: 1s;
+//           -webkit-animation-iteration-count: infinite;
+//           animation-iteration-count: infinite;
+//         }
+//         @keyframes fill {
+//           from { fill: $yellow; }
+//           to { fill: #000; }
+//         }
+//       }
+//       h1 {
+//         margin-bottom: 20px;
+//         font-family: $biko;
+//         color: #fff;
+//         text-transform: uppercase;
+//       }
+//       input {
+//         height: 50px;
+//         width: 75%;
+//         margin-bottom: 20px;
+//         background: $yellow;
+//         border: none;
+//         font-family: $biko;
+//         font-size: 40px;
+//         text-align: center;
+//         text-transform: uppercase;
+//         color: #000;
+//         border-radius: 10px;
+//         // border: 1px white solid;
+//       }
+//       input:focus {
+//         outline: 0;
+//       }
+//       input::-webkit-input-placeholder {
+//         color: #000;
+//         font-size: 16px;
+//         text-align: center;
+//         text-transform: uppercase;
+//       }
+//       button {
+//         height: 50px;
+//         width: 150px;
+//         font-family: $biko;
+//         color: $teal;
+//         background: #000;
+//         border: 5px $teal solid;
+//         border-radius: 10px;
+//       }
+//       button:focus {
+//         outline:0;
+//       }
+//     }
+//   }
+// }

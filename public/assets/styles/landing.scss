@@ -17,12 +17,13 @@
 }
 
 // COLOR SCHEME
-$teal: #53B1B1;
+$teal: #7FDDD7;
 $blue: #126AC4;
 $purp: #523AB7;
-$red: #F16B65;
-$oj: #EA5D24;
-$yellow: #F8D875;
+$red: #EA0785;
+$oj: #F0552B;
+$yellow: #FBEC7D;
+$green: #1CDE89;
 
 // FONTS
 
@@ -46,12 +47,13 @@ $biko: 'bikoregular', sans-serif;
     height: 100%;
     div {
       animation: border 2.5s;
-      border: 5px #fff solid;
-      padding-top: 60px;
-      padding-bottom: 60px;
-      padding-left: 20px;
-      padding-right: 20px;
-      border-radius: 100%;
+      background: linear-gradient(217.6deg, #F0552B 31.34%, rgba(255, 255, 255, 0) 110.78%), linear-gradient(0deg, #EA0785, #EA0785);
+      mix-blend-mode: normal;opacity: 100%;
+      padding-top: 65px;
+      padding-bottom: 65px;
+      padding-left: 35px;
+      padding-right: 35px;
+      border-radius: 85px;
       transition: 2s margin-bottom, border 2s;
     @keyframes border {
       from { opacity: 0; margin-bottom: 100px; animation-timing-function: ease-in-out; }
@@ -59,13 +61,12 @@ $biko: 'bikoregular', sans-serif;
     }
       h1 {
         font-family: $biko;
-        font-size: 50px;
+        font-size: 36px;
         color: #fff;
         animation: fadein 2.5s;
         transition: 2s color;
       }
       h1:hover {
-        color: $oj;
         cursor: crosshair;
       }
       @keyframes fadein {
@@ -81,9 +82,7 @@ $biko: 'bikoregular', sans-serif;
     }
     div:hover {
       margin-bottom: 50px;
-      border: 5px $oj solid;
       cursor: crosshair;
-      color: $oj;
     }
   }
 }

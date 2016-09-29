@@ -4,11 +4,9 @@ angular.module('weather_app')
       restrict: 'EA',
       templateUrl: 'public/app/components/nav/navTmpl.html',
       link: function() {
-        $( document ).ready(function() {
-          $('#hamburger').click(function(){
-             $('.nav-mobile').stop().slideToggle();
-          });
-        });
+        // $( document ).ready(function() {
+        //   console.log('ready');
+        // });
       }
     };
 });
