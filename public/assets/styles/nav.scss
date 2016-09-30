@@ -30,6 +30,11 @@ $green: #1CDE89;
 $weather-icon: 'icon', sans-serif;
 $biko: 'bikoregular', sans-serif;
 
+html,body
+{
+    overflow-x: hidden;
+}
+
 
 .nav-section {
   display: flex;
