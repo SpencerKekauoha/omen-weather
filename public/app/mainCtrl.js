@@ -195,6 +195,7 @@ angular.module('weather_app')
     //         break;
     //       case 'Thunderstorm':
     //       case 'Chance of Thunderstorm':
+            // case 'Chance of a Thunderstorm':
     //       case 'Thunderstorms and Rain':
     //       case 'Light Thunderstorm':
     //         $scope.icon3 = 'Y';
@@ -319,6 +320,7 @@ angular.module('weather_app')
           break;
         case 'Thunderstorm':
         case 'Chance of Thunderstorm':
+        case 'Chance of a Thunderstorm':
         case 'Thunderstorms and Rain':
         case 'Light Thunderstorm':
           $scope.icon = 'Y';
@@ -371,6 +373,7 @@ angular.module('weather_app')
             break;
           case 'Thunderstorm':
           case 'Chance of Thunderstorm':
+          case 'Chance of a Thunderstorm':
           case 'Thunderstorms and Rain':
           case 'Light Thunderstorm':
             $scope.icon1 = 'Y';
@@ -419,6 +422,7 @@ angular.module('weather_app')
             break;
           case 'Thunderstorm':
           case 'Chance of Thunderstorm':
+          case 'Chance of a Thunderstorm':
           case 'Thunderstorms and Rain':
           case 'Light Thunderstorm':
             $scope.icon2 = 'Y';
@@ -467,6 +471,7 @@ angular.module('weather_app')
             break;
           case 'Thunderstorm':
           case 'Chance of Thunderstorm':
+          case 'Chance of a Thunderstorm':
           case 'Thunderstorms and Rain':
           case 'Light Thunderstorm':
             $scope.icon3 = 'Y';
@@ -515,6 +520,7 @@ angular.module('weather_app')
             break;
           case 'Thunderstorm':
           case 'Chance of Thunderstorm':
+          case 'Chance of a Thunderstorm':
           case 'Thunderstorms and Rain':
           case 'Light Thunderstorm':
             $scope.icon4 = 'Y';
