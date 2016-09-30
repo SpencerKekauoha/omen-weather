@@ -1,10 +1,23 @@
 <nav-dir></nav-dir>
 <section class="dashboard-section">
-  <div class="">
-
+  <div class="main-data-col">
+    <h1>{{city}}</h1>
+    <h1 class="weather-icon">{{icon}}</h1>
+    <h2>{{temp}}°</h2>
+  </div>
+  <div class="secondary-data-col">
+    <h1>Day</h1>
+    <h2>{{day}}</h2>
+    <h1>HI</h1>
+    <h2>{{hi}}°</h2>
+    <h1>LO</h1>
+    <h2>{{lo}}°</h2>
+    <h1>Wind</h1>
+    <h2>{{wind}}mph</h2>
+    <h1>Condition</h1>
+    <h2>{{condition}}</h2>
+    <h1>Humidity</h1>
+    <h2>{{humidity}}</h2>
   </div>
 </section>
-
-
-
-{{data}}
+<four-day-forecast-dir></four-day-forecast-dir>

@@ -7,6 +7,9 @@ angular.module('weather_app')
         $('#search').click(function(){
           $('.search-bar-section').slideToggle();
         });
+        $('.search-btn').click(function(){
+          $('.search-bar-section').slideToggle();
+        });
       }
     };
 });

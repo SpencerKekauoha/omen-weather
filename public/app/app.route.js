@@ -12,7 +12,8 @@ angular.module('weather_app', ["ui.router"])
       })
       .state('dashboard', {
         url: '/dashboard',
-        templateUrl: 'public/app/components/dashboard/dashboardTmpl.html'
+        templateUrl: 'public/app/components/dashboard/dashboardTmpl.html',
+        controller: 'mainCtrl'
       });
 
     $urlRouterProvider

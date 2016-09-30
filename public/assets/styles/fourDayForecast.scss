@@ -1,0 +1,31 @@
+// FONT IMPORTS
+
+@font-face {
+    font-family: 'icon';
+    src: url('weather_icons/webfontkit/artill_clean_icons-webfont.woff') format('woff2'),
+         url('weather_icons/webfontkit/artill_clean_icons-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bikoregular';
+    src: url('biko/biko_webfont/biko_regular-webfont.woff2') format('woff2'),
+         url('biko/biko_webfont/biko_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// COLOR SCHEME
+$teal: #7FDDD7;
+$blue: #126AC4;
+$purp: #523AB7;
+$red: #EA0785;
+$oj: #F0552B;
+$yellow: #FBEC7D;
+$green: #1CDE89;
+
+// FONTS
+
+$weather-icon: 'icon', sans-serif;
+$biko: 'bikoregular', sans-serif;
