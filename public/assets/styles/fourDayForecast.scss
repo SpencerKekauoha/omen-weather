@@ -29,3 +29,60 @@ $green: #1CDE89;
 
 $weather-icon: 'icon', sans-serif;
 $biko: 'bikoregular', sans-serif;
+
+.four-day-section {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  /* Rectangle 8 */background: linear-gradient(214.9deg, #F0552B 10.03%, rgba(255, 255, 255, 0) 135.31%), linear-gradient(0deg, #EA0785, #EA0785);
+  mix-blend-mode: normal;
+  opacity: 100%;
+  font-family: $biko;
+  color: #333;
+  .date-col {
+    width: 35%;
+    height: 100%;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 25%;
+      border-bottom: 2px #fff solid;
+      border-right: 2px #fff solid;
+      h1 {
+        font-size: 72px;
+      }
+    }
+  }
+  .weather-col {
+    width: 65%;
+    height: 100%;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      height: 25%;
+      border-bottom: 2px #fff solid;
+      h1 {
+        font-family: $weather-icon;
+        font-size: 75px;
+      }
+      .four-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        border: none;
+        p {
+          margin-bottom: 10px;
+          align-self: flex-start;
+          text-indent: 10px;
+        }
+      }
+    }
+  }
+}
