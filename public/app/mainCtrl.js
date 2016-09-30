@@ -73,16 +73,207 @@ angular.module('weather_app')
     //     default:
     //       $scope.icon = '3';
     //   }
+    //   $scope.day1 = function(location){
+    //     $scope.test1 = response;
+    //     $scope.dailyCondition1 = response.forecast.simpleforecast.forecastday[0].conditions;
+    //     $scope.dailyCondition2 = response.forecast.simpleforecast.forecastday[1].conditions;
+    //     $scope.dailyCondition3 = response.forecast.simpleforecast.forecastday[2].conditions;
+    //     $scope.dailyCondition4 = response.forecast.simpleforecast.forecastday[3].conditions;
+    //     switch($scope.dailyCondition1) {
+    //       case 'Mostly Cloudy':
+    //       case 'Scattered Clouds':
+    //       case 'OverCast':
+    //       case 'Partly Cloudy':
+    //         $scope.icon1 = '3';
+    //         break;
+    //       case 'Rain':
+    //       case 'Chance of Rain':
+    //       case 'Light Rain':
+    //       case 'Light Showers':
+    //       case 'Light Rain Mist':
+    //       case 'Drizzle':
+    //       case 'Light Drizzle':
+    //       case 'Light Rain Showers':
+    //       case 'Showers Rain Mist':
+    //         $scope.icon1 = 'M';
+    //         break;
+    //       case 'Thunderstorm':
+    //       case 'Chance of Thunderstorm':
+    //       case 'Thunderstorms and Rain':
+    //       case 'Light Thunderstorm':
+    //         $scope.icon1 = 'Y';
+    //         break;
+    //       case 'Mist':
+    //       case 'Haze':
+    //       case 'Fog':
+    //       case 'Heavy Fog':
+    //       case 'Partial Fog':
+    //       case 'Light Fog':
+    //         $scope.icon1 = 'Z';
+    //         break;
+    //       case 'Snow':
+    //       case 'Light Snow':
+    //         $scope.icon1 = 'I';
+    //         break;
+    //       case 'Clear':
+    //         $scope.icon1 = '1';
+    //         break;
+    //       case undefined:
+    //         $scope.icon1 = 'Wrong City';
+    //         break;
+    //       default:
+    //         $scope.icon1 = '3';
+    //     }
+    //   }(location);
+    //
+    //   $scope.day2 = function(location){
+    //     switch($scope.dailyCondition2) {
+    //       case 'Mostly Cloudy':
+    //       case 'Scattered Clouds':
+    //       case 'OverCast':
+    //       case 'Partly Cloudy':
+    //         $scope.icon2 = '3';
+    //         break;
+    //       case 'Rain':
+    //       case 'Chance of Rain':
+    //       case 'Light Rain':
+    //       case 'Light Showers':
+    //       case 'Light Rain Mist':
+    //       case 'Drizzle':
+    //       case 'Light Drizzle':
+    //       case 'Light Rain Showers':
+    //       case 'Showers Rain Mist':
+    //         $scope.icon2 = 'M';
+    //         break;
+    //       case 'Thunderstorm':
+    //       case 'Chance of Thunderstorm':
+    //       case 'Thunderstorms and Rain':
+    //       case 'Light Thunderstorm':
+    //         $scope.icon2 = 'Y';
+    //         break;
+    //       case 'Mist':
+    //       case 'Haze':
+    //       case 'Fog':
+    //       case 'Heavy Fog':
+    //       case 'Partial Fog':
+    //       case 'Light Fog':
+    //         $scope.icon2 = 'Z';
+    //         break;
+    //       case 'Snow':
+    //       case 'Light Snow':
+    //         $scope.icon2 = 'I';
+    //         break;
+    //       case 'Clear':
+    //         $scope.icon2 = '1';
+    //         break;
+    //       case undefined:
+    //         $scope.icon2 = 'Wrong City';
+    //         break;
+    //       default:
+    //         $scope.icon2 = '3';
+    //     }
+    //   }(location);
+    //
+    //   $scope.day3 = function(location){
+    //     switch($scope.dailyCondition3) {
+    //       case 'Mostly Cloudy':
+    //       case 'Scattered Clouds':
+    //       case 'OverCast':
+    //       case 'Partly Cloudy':
+    //         $scope.icon3 = '3';
+    //         break;
+    //       case 'Rain':
+    //       case 'Chance of Rain':
+    //       case 'Light Rain':
+    //       case 'Light Showers':
+    //       case 'Light Rain Mist':
+    //       case 'Drizzle':
+    //       case 'Light Drizzle':
+    //       case 'Light Rain Showers':
+    //       case 'Showers Rain Mist':
+    //         $scope.icon3 = 'M';
+    //         break;
+    //       case 'Thunderstorm':
+    //       case 'Chance of Thunderstorm':
+    //       case 'Thunderstorms and Rain':
+    //       case 'Light Thunderstorm':
+    //         $scope.icon3 = 'Y';
+    //         break;
+    //       case 'Mist':
+    //       case 'Haze':
+    //       case 'Fog':
+    //       case 'Heavy Fog':
+    //       case 'Partial Fog':
+    //       case 'Light Fog':
+    //         $scope.icon3 = 'Z';
+    //         break;
+    //       case 'Snow':
+    //       case 'Light Snow':
+    //         $scope.icon3 = 'I';
+    //         break;
+    //       case 'Clear':
+    //         $scope.icon3 = '1';
+    //         break;
+    //       case undefined:
+    //         $scope.icon3 = 'Wrong City';
+    //         break;
+    //       default:
+    //         $scope.icon3 = '3';
+    //     }
+    //   }(location);
+    //
+    //   $scope.day4 = function(location){
+    //     switch($scope.dailyCondition4) {
+    //       case 'Mostly Cloudy':
+    //       case 'Scattered Clouds':
+    //       case 'OverCast':
+    //       case 'Partly Cloudy':
+    //         $scope.icon4 = '3';
+    //         break;
+    //       case 'Rain':
+    //       case 'Chance of Rain':
+    //       case 'Light Rain':
+    //       case 'Light Showers':
+    //       case 'Light Rain Mist':
+    //       case 'Drizzle':
+    //       case 'Light Drizzle':
+    //       case 'Light Rain Showers':
+    //       case 'Showers Rain Mist':
+    //         $scope.icon4 = 'M';
+    //         break;
+    //       case 'Thunderstorm':
+    //       case 'Chance of Thunderstorm':
+    //       case 'Thunderstorms and Rain':
+    //       case 'Light Thunderstorm':
+    //         $scope.icon4 = 'Y';
+    //         break;
+    //       case 'Mist':
+    //       case 'Haze':
+    //       case 'Fog':
+    //       case 'Heavy Fog':
+    //       case 'Partial Fog':
+    //       case 'Light Fog':
+    //         $scope.icon4 = 'Z';
+    //         break;
+    //       case 'Snow':
+    //       case 'Light Snow':
+    //         $scope.icon4 = 'I';
+    //         break;
+    //       case 'Clear':
+    //         $scope.icon4 = '1';
+    //         break;
+    //       case undefined:
+    //         $scope.icon4 = 'Wrong City';
+    //         break;
+    //       default:
+    //         $scope.icon4 = '3';
+    //     }
+    //   }(location);
     // });
 
     $scope.getWeatherData = function(location) {
     mainSrv.callApi(location).then(function(response){
       $scope.data = response;
-      // if($scope.data.response.error.description === 'No cities match your search query') {
-      //   alert('No cities match your search query');
-      // }
-      //test
-      // console.log($scope.data.response.error.description);
       $scope.city = response.current_observation.display_location.city;
       $scope.temp = parseInt(response.current_observation.temp_f);
       $scope.hi = response.forecast.simpleforecast.forecastday[0].high.fahrenheit;

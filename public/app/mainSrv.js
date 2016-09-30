@@ -19,10 +19,6 @@ angular.module('weather_app')
         url: baseUrl
       }).then(function(response){
         var result = response.data;
-        // console.log(result.response.error.description);
-        // if(result.response.error.description === 'No cities match your search query') {
-        //   alert('No cities match your search');
-        // }
         return result;
       });
     };
