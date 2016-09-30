@@ -48,6 +48,7 @@ html,body
     font-family: $biko;
     color: #fff;
     font-size: 36px;
+    letter-spacing: 3px;
   }
   #search {
     position: absolute;
@@ -92,5 +93,23 @@ html,body
     height: 3px;
     width: 20%;
     background: $yellow;
+  }
+}
+
+//////////////////
+
+// MEDIA QUERIES
+
+/////////////////
+
+@media (min-width: 769px) {
+  .nav-section {
+    justify-content: flex-start;
+    h1 {
+      text-indent: 20px;
+    }
+    #search {
+      right: 40px;
+    }
   }
 }

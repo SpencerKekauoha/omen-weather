@@ -51,10 +51,6 @@ $biko: 'bikoregular', sans-serif;
       text-transform: uppercase;
       text-align: center;
     }
-    svg {
-      margin-bottom: 40px;
-      height: 109px;
-    }
     .weather-icon {
       font-family: $weather-icon;
       font-size: 150px;
@@ -88,3 +84,34 @@ $biko: 'bikoregular', sans-serif;
 //   font-size: 50px !important;
 //   font-family: $weather-icon;
 // }
+
+//////////////////
+
+// MEDIA QUERIES
+
+/////////////////
+
+@media (min-width: 769px) {
+  .dashboard-section {
+    .main-data-col {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 80px;
+      }
+      .weather-icon {
+        font-size: 200px;
+      }
+      h2 {
+        font-size: 160px;
+      }
+    }
+    .secondary-data-col {
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+}

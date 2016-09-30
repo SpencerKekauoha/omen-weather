@@ -86,3 +86,34 @@ $biko: 'bikoregular', sans-serif;
     }
   }
 }
+
+//////////////////
+
+// MEDIA QUERIES
+
+/////////////////
+
+@media (min-width: 769px) {
+  .four-day-section {
+    .date-col {
+      div {
+        h1 {
+
+        }
+      }
+    }
+    .weather-col {
+      div {
+        h1 {
+          font-size: 150px !important;
+        }
+        .four-info {
+          p {
+            font-size: 40px;
+            text-indent: 50px;
+          }
+        }
+      }
+    }
+  }
+}

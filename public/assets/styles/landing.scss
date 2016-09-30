@@ -86,3 +86,28 @@ $biko: 'bikoregular', sans-serif;
     }
   }
 }
+
+//////////////////
+
+// MEDIA QUERIES
+
+/////////////////
+
+@media (min-width: 769px) {
+  .landing-section {
+    .landing-title-container{
+      div {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        padding-left: 65px;
+        padding-right: 65px;
+        border-radius: 200px;
+
+        h1 {
+          font-size: 80px;
+          letter-spacing: 10px;
+        }
+      }
+    }
+  }
+}

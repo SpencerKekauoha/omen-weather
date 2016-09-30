@@ -31,47 +31,86 @@ $weather-icon: 'icon', sans-serif;
 $biko: 'bikoregular', sans-serif;
 
 .search-bar-section {
-  display: flex;
-  flex-direction: column;
-  font-family: $biko;
-  background: #000;
-  border: none;
-  border-bottom: 1px solid #000;
   display: none;
-  .search {
-    height: 85px;
+  div {
+    display: flex;
+    flex-direction: column;
+    font-family: $biko;
     background: #000;
-    font-size: 30px;
-    text-indent: 15px;
-    color: #fff;
     border: none;
-  }
-  .search:focus {
-    outline: 0;
-  }
-  .search::-webkit-input-placeholder {
-    text-indent: 15px;
-    color: #fff;
-    font-size: 30px;
-    // text-align: left;
-    text-transform: uppercase;
-  }
-  .search-btn {
-    height: 53px;
-    width: 92px;
-    margin-left: 15px;
-    background: linear-gradient(242.18deg, #F0552B -7.3%, rgba(255, 255, 255, 0) 132.76%), linear-gradient(0deg, #EA0785, #EA0785);
-    mix-blend-mode: normal;
-    opacity: 100%;
-    border-radius: 20px;
-    border: none;
-    font-size: 12px;
-    color: #fff;
-  }
-  .search-btn:focus {
-    outline: 0;
+    border-bottom: 1px solid #000;
+    .search {
+      height: 85px;
+      background: #000;
+      font-size: 30px;
+      text-indent: 15px;
+      color: #fff;
+      border: none;
+    }
+    .search:focus {
+      outline: 0;
+    }
+    .search::-webkit-input-placeholder {
+      text-indent: 15px;
+      color: #fff;
+      font-size: 30px;
+      // text-align: left;
+      text-transform: uppercase;
+    }
+    .search-btn {
+      height: 53px;
+      width: 124px;
+      margin-left: 15px;
+      background: linear-gradient(242.18deg, #F0552B -7.3%, rgba(255, 255, 255, 0) 132.76%), linear-gradient(0deg, #EA0785, #EA0785);
+      mix-blend-mode: normal;
+      opacity: 100%;
+      border: none;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+    .search-btn:hover {
+      cursor: crosshair;
+      opacity: .9;
+    }
+    .search-btn:focus {
+      outline: 0;
+    }
   }
 }
+
+//////////////////
+
+// MEDIA QUERIES
+
+/////////////////
+
+@media (min-width: 769px) {
+  .search-bar-section {
+    // display: none;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .search {
+        width: 40%;
+        font-size: 68px;
+      }
+      .search::-webkit-input-placeholder {
+        text-indent: 15px;
+        color: #fff;
+        font-size: 36px;
+        text-transform: uppercase;
+      }
+      .search-btn {
+      }
+    }
+  }
+}
+
+
+//svg animations
 
 // .search-section {
 //   height: 100vh;
