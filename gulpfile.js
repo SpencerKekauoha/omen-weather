@@ -8,7 +8,7 @@ var cleanCSS = require('gulp-clean-css');
 
 var paths = {
   jsSource: ['./public/app/**/*.js', '!public/config.js'],
-  sassSource: ['./public/assets/styles/**/*.scss']
+  sassSource: ['./public/assets/styles/normalize.css', './public/assets/styles/reset.css', './public/assets/styles/**/*.scss',]
 };
 
 gulp.task('js', function() {
