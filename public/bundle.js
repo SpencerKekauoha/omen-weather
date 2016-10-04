@@ -22,12 +22,6 @@ angular.module('weather_app', ["ui.router"])
       .otherwise('/landing');
 }]);
 
-angular.module('weather_app').constant('weatherKeys', {
-  WEATHER_KEY: '369426af0b8bba29'
-});
-
-// weather underground api key
-
 angular.module('weather_app')
   .controller('mainCtrl', ["$scope", "mainSrv", function($scope, mainSrv){
 
