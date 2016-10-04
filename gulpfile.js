@@ -8,7 +8,7 @@ var gulpIgnore = require('gulp-ignore');
 var condition = './config.js';
 
 var paths = {
-  jsSource: ['./public/app/**/*.js', '!public/app/config.js'],
+  jsSource: ['./public/app/**/*.js', '!public/config.js'],
   sassSource: ['./public/assets/styles/**/*.scss']
 };
 
