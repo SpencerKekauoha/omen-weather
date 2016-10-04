@@ -4,6 +4,7 @@ var annotate = require('gulp-ng-annotate');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 var sass = require('gulp-sass');
+var cleanCSS = require('gulp-clean-css');
 
 var paths = {
   jsSource: ['./public/app/**/*.js', '!public/config.js'],
@@ -22,8 +23,14 @@ gulp.task('styles', function () {
   return gulp.src(paths.sassSource)
     .pipe(sass())
     .pipe(concat('style.css'))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./public/assets/styles'));
 });
+
+// gulp.task('minify-css', function() {
+//   return gulp.src('public/assets/styles/style.css')
+//     .pipe(gulp.dest('./public/assets/styles'));
+// });
 
 gulp.task('watch', function() {
   gulp.watch(paths.jsSource, ['js']);
