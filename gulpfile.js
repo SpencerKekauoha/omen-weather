@@ -4,8 +4,6 @@ var annotate = require('gulp-ng-annotate');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 var sass = require('gulp-sass');
-var gulpIgnore = require('gulp-ignore');
-var condition = './config.js';
 
 var paths = {
   jsSource: ['./public/app/**/*.js', '!public/config.js'],
@@ -16,7 +14,7 @@ gulp.task('js', function() {
   return gulp.src(paths.jsSource)
   .pipe(concat('bundle.js'))
   .pipe(annotate())
-  // .pipe(uglify()) //Uncomment when code is production ready
+  .pipe(uglify()) //Uncomment when code is production ready
   .pipe(gulp.dest('./public'));
 });
 
